@@ -1,16 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Ahorcado";
 }
-<script src="~/js/site.js"></script>
 <h1>Ahorcado</h1>
 <p>Adiviná la palabra letra por letra. Tenés máximo 10 intentos.</p>
-
 <div>
     <div>
         <h3>Palabra a Descubrir</h3>
         <div id="palabraOculta"></div>
     </div>
-
     <div>
         <div>
             <h3>Intentos Restantes:</h3>
@@ -21,18 +18,13 @@
             <div id="letrasUsadas"></div>
         </div>
     </div>
-
     <div id="mensajeFinal"></div>
-
     <div>
         <label for="letraInput">Ingresa una letra:</label>
         <input id="letraInput" type="text" maxlength="1" />
         <button type="button" onclick="ArriesgarLetra()">Arriesgar</button>
     </div>
-
     <input type="hidden" id="palabraSecreta" value="@ViewBag.Palabra" />
 </div>
-
-
-
-
+<script src="~/js/site.js"></script>
+<script>inicializarJuego();</script>

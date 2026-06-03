@@ -56,4 +56,3 @@ function ArriesgarLetra() {
         document.getElementById("mensajeFinal").textContent = "Perdiste. La palabra era " + palabraSecreta;
     }
 }
-window.onload = inicializarJuego;
