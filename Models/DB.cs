@@ -15,4 +15,20 @@ public class DB
         }
         return palabras;
     }
+    public void eliminarPalabra(string palabra) 
+    {
+        string query = "DELETE * FROM Palabras WHERE palabra = @palabra";
+        using(SqlConnection conexion = new SqlConnection(conexionBD)) 
+        {
+            conexion.Execute(query, new {palabra});
+        }
+    }
+    public void agregarPalabra(string palabra)
+    {
+        string query = "INSERT INTO Palabras (palabra) VALUES (@palabra)";
+        using(SqlConnection conexion = new SqlConnection(conexionBD)) 
+        {
+            conexion.Execute(query, new {palabra});
+        }
+    }
 }
