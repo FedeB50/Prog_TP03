@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using TP03.Models;
+using ActBD.Models;
 
-namespace TP03.Controllers;
+namespace ActBD.Controllers;
 
 public class HomeController : Controller
 {

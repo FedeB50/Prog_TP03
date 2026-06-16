@@ -1,4 +1,4 @@
-namespace TP03.Models;
+namespace ActBD.Models;
 
 public class ErrorViewModel
 {
